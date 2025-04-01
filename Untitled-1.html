@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tear me up by whatsaheart - Distrokid</title>
+    <style>
+        body {
+            background-image: url(https://media.discordapp.net/attachments/922522362556088330/1356605139305369681/IMG_6393.jpg?ex=67ed2c7d&is=67ebdafd&hm=afbcd818e6c07aa78a5f655d79ddd48b927f2081a23caa40caaab44b6dd3b8f2&=&format=webp);
+            background-size: cover;
+            backdrop-filter: blur(20px);
+            background-color: #1e1e1e;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 106vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 620px;
+            height: 300px;
+            position: relative;
+        }
+        .album-art {
+            width: 170px;
+            height: 170px;
+            border-radius: 5px;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .content {
+            padding-top: 100px;
+        }
+        .title {
+            font-size: 35px;
+            font-weight: bold;
+            margin: 45px 0;
+        }
+        .artist {
+            font-size: 18px;
+            margin-top: -18px;
+            margin-bottom: 50px; 
+        }
+        .release-date {
+            font-size: 14px;
+            color: #bbb;
+            margin-top: -10px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .release-date::before {
+            content: '\1F4C5'; 
+            margin-right: 3px;
+        }
+        .pre-save-container {
+            margin-top: 30px; 
+            width: 41.7%; 
+            height: 95px;
+            display: flex;
+            justify-content: center;
+        }
+        .pre-save {
+            background-image: url(https://cdn.discordapp.com/attachments/922522362556088330/1356606987806310460/IMG_6393.jpg?ex=67ed2e36&is=67ebdcb6&hm=065c0d06a3aef087f5259a537b37c3b4e246a36b7d5ebfb074bbec0516e6519f&);
+            backdrop-filter: blur(50px);
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .pre-save:hover {
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .pre-save a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .pre-save a::after {
+            content: '\25B6'; /* Unicode for small right arrow ▶ */
+            font-size: 14px;
+            position: absolute;
+            right: -470px;
+            top: 20px;
+            opacity: 0.7;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-container input {
+            margin-right: 5px;
+        }
+    </style>
+    <script>
+        function redirectToPreSave() {
+           window.location.href = "rr.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.discordapp.net/attachments/922522362556088330/1356567219215269908/IMG_6394.jpg?ex=67ed092c&is=67ebb7ac&hm=788919919d0d761fae9d167a6d1c3bbf3596a2e281e96c4f1854247164790166&=&format=webp" alt="Album Art" class="album-art">
+        <div class="content">
+            <div class="title">tear me up</div>
+            <div class="artist">whatsaheart</div>
+            <div class="release-date">Available April 4, 2025</div>
+        </div>
+    </div>
+    
+    <!-- Pre-save and Checkbox Container -->
+    <div class="pre-save-container">
+        <div class="pre-save" onclick="redirectToPreSave()">
+            <a href="rr.html" target="distrok">Spotify Pre-Save</a>
+            <!-- Checkbox inside Pre-save Container -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="share-email">
+                <label for="share-email">Share email address with artist</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
